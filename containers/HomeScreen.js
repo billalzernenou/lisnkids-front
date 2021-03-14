@@ -98,72 +98,75 @@ export default function HomeScreen({
         />
       )}
       <StatusBar hidden={true} />
-      <ScrollView style={styles.scroll}>
-        <View style={styles.title}>
-          <Text
-            style={styles.nameUser}
-          >{`Bonjour ${childrenInfos.firstName},`}</Text>
-          <Text
-            style={[
-              styles.welcome,
-              {
-                color: dayNightMode ? colors.textDay : colors.textNight,
-              },
-            ]}
-          >
-            qu'est ce qu'on écoute aujourd'hui ?
-          </Text>
-        </View>
-
-        {/* HERO - SERIE STAR */}
-        <View style={[styles.carousselHero]}>
-          <FlatList
-            data={data2}
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            keyExtractor={(item) => String(item._id)}
-            renderItem={({ item, index }) => (
-              <View>
-                <TouchableOpacity
-                  onPress={() => {
-                    navigation.push("Serie", {
-                      id: item._id,
-                    });
-                  }}
-                >
-                  <View style={[styles.hero]}>
-                    <View>
-                      <Image
-                        style={styles.imgHero}
-                        source={{ uri: item.image }}
-                      />
-                      <View style={[styles.absolute]}>
-                        <Text style={styles.textAbsolute}>
-                          Nouveaux épisodes
-                        </Text>
-                      </View>
-                    </View>
-                  </View>
-
-                  {/* NAME SERIE STAR */}
-                  <View
-                    style={{
-                      alignItems: "flex-end",
-                      justifyContent: "flex-start",
-                    }}
-                  >
-                    <Text style={styles.titleStar}>{`${item.title}`}</Text>
-                  </View>
-                </TouchableOpacity>
-              </View>
-            )}
-          />
-        </View>
-
+      <View style={styles.scroll}>
         {/* OTHER SERIES */}
         <View style={[styles.otherSeries]}>
           <FlatList
-            ListHeaderComponent={<></>}
+            ListHeaderComponent={
+              <>
+                <View style={styles.title}>
+                  <Text
+                    style={styles.nameUser}
+                  >{`Bonjour ${childrenInfos.firstName},`}</Text>
+                  <Text
+                    style={[
+                      styles.welcome,
+                      {
+                        color: dayNightMode ? colors.textDay : colors.textNight,
+                      },
+                    ]}
+                  >
+                    qu'est ce qu'on écoute aujourd'hui ?
+                  </Text>
+                </View>
+                {/* HERO - SERIE STAR */}
+                <View style={[styles.carousselHero]}>
+                  <FlatList
+                    data={data2}
+                    horizontal={true}
+                    showsHorizontalScrollIndicator={false}
+                    keyExtractor={(item) => String(item._id)}
+                    renderItem={({ item, index }) => (
+                      <View>
+                        <TouchableOpacity
+                          onPress={() => {
+                            navigation.push("Serie", {
+                              id: item._id,
+                            });
+                          }}
+                        >
+                          <View style={[styles.hero]}>
+                            <View>
+                              <Image
+                                style={styles.imgHero}
+                                source={{ uri: item.image }}
+                              />
+                              <View style={[styles.absolute]}>
+                                <Text style={styles.textAbsolute}>
+                                  Nouveaux épisodes
+                                </Text>
+                              </View>
+                            </View>
+                          </View>
+
+                          {/* NAME SERIE STAR */}
+                          <View
+                            style={{
+                              alignItems: "flex-end",
+                              justifyContent: "flex-start",
+                            }}
+                          >
+                            <Text
+                              style={styles.titleStar}
+                            >{`${item.title}`}</Text>
+                          </View>
+                        </TouchableOpacity>
+                      </View>
+                    )}
+                  />
+                </View>
+              </>
+            }
             data={data}
             keyExtractor={(item) => String(item._id)}
             renderItem={({ item, index }) => (
@@ -226,7 +229,7 @@ export default function HomeScreen({
             )}
           />
         </View>
-      </ScrollView>
+      </View>
     </View>
   );
 }
