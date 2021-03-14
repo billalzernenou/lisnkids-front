@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "rank": 1,
+    "title": "Kicked Server",
+    "audio": "https://res.cloudinary.com/brice/video/upload/v1614770214/test-audio/kicked-server.mp3",
+    "picture": ""
+  },
+  {
+    "id": 2,
+    "rank": 2,
+    "title": "See You Soon",
+    "audio": "https://res.cloudinary.com/brice/video/upload/v1614770214/test-audio/see-soon.mp3",
+    "picture": ""
+  },
+  {
+    "id": 3,
+    "rank": 3,
+    "title": "Disconnected",
+    "audio": "https://res.cloudinary.com/brice/video/upload/v1614770214/test-audio/disconnected.mp3",
+    "picture": ""
+  },
+  {
+    "id": 4,
+    "rank": 4,
+    "title": "Moved",
+    "audio": "https://res.cloudinary.com/brice/video/upload/v1614770214/test-audio/moved.mp3",
+    "picture": ""
+  },
+  {
+    "id": 5,
+    "rank": 5,
+    "title": "File Complete",
+    "audio": "https://res.cloudinary.com/brice/video/upload/v1614770214/test-audio/file-complete.mp3",
+    "picture": ""
+  },
+  {
+    "id": 6,
+    "rank": 6,
+    "title": "Banned",
+    "url": "https://res.cloudinary.com/brice/video/upload/v1614770214/test-audio/banned.mp3",
+    "picture": ""
+  }
+]
