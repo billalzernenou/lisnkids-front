@@ -39,7 +39,7 @@ export default function SerieScreen({
       // setChildren(JSON.parse(childrenStorage));
       try {
         const res = await axios.get(
-          `https://lisnkids.herokuapp.com/api/episodes?id=${id}`,
+          `https://lisnkids-api.herokuapp.com/api/episodes?id=${id}`,
           {
             headers: {
               Authorization: "Bearer LRCes!e2021vg",
@@ -48,7 +48,7 @@ export default function SerieScreen({
           }
         );
         const response = await axios.post(
-          `https://lisnkids.herokuapp.com/api/infoChildren`,
+          `https://lisnkids-api.herokuapp.com/api/infoChildren`,
           formData,
           {
             headers: {
@@ -106,7 +106,7 @@ export default function SerieScreen({
       formData.append("idChildren", children._id);
       formData.append("idEpisode", idEpisode);
       const res = await axios.post(
-        `https://lisnkids.herokuapp.com/api/addEpisodeMyplaylists`,
+        `https://lisnkids-api.herokuapp.com/api/addEpisodeMyplaylists`,
         formData,
         {
           headers: {

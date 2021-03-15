@@ -60,7 +60,7 @@ const SettingParentScreen = ({
 
         //  send request to api
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/userCard",
+          "https://lisnkids-api.herokuapp.com/api/userCard",
           formData,
           {
             headers: {

@@ -58,7 +58,7 @@ export default function SignInScreen({
         formData.append("password", password);
         //  send request to api
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/signin",
+          "https://lisnkids-api.herokuapp.com/api/signin",
           formData,
           {
             headers: {

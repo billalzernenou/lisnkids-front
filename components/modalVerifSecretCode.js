@@ -42,7 +42,7 @@ const modalVerifSecretCode = ({
         const userId = await AsyncStorage.getItem("userId");
         formData.append("_id", userId);
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/userCard",
+          "https://lisnkids-api.herokuapp.com/api/userCard",
           formData,
           {
             headers: {

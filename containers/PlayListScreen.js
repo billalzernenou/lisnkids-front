@@ -65,7 +65,7 @@ export default function PlayListScreen({
         formData0.append("idChildren", idChildren);
         //  send request to api
         const response0 = await axios.post(
-          "https://lisnkids.herokuapp.com/api/listMyPlaylistEpisode",
+          "https://lisnkids-api.herokuapp.com/api/listMyPlaylistEpisode",
           formData0,
           {
             headers: {
@@ -92,7 +92,7 @@ export default function PlayListScreen({
 
         //  display PlayList
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/listMyPlaylist",
+          "https://lisnkids-api.herokuapp.com/api/listMyPlaylist",
           formData,
           {
             headers: {
@@ -131,7 +131,7 @@ export default function PlayListScreen({
 
       //  send request to api
       const response = await axios.post(
-        "https://lisnkids.herokuapp.com/api/trashEpisodeMyplaylists",
+        "https://lisnkids-api.herokuapp.com/api/trashEpisodeMyplaylists",
         formData,
         {
           headers: {
@@ -162,7 +162,7 @@ export default function PlayListScreen({
       formData.append("idPlayLists", idplayslist);
       //  send request to api
       const response = await axios.post(
-        "https://lisnkids.herokuapp.com/api/downloadEpisodeMyplaylists",
+        "https://lisnkids-api.herokuapp.com/api/downloadEpisodeMyplaylists",
         formData,
         {
           headers: {

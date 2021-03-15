@@ -69,7 +69,7 @@ export default function AddFirstChildren({
         formData.append("_id", userId);
         //  send request to api
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/userCard",
+          "https://lisnkids-api.herokuapp.com/api/userCard",
           formData,
           {
             headers: {
@@ -101,7 +101,7 @@ export default function AddFirstChildren({
       const formData = new FormData();
       formData.append("", "");
       const response = await axios.post(
-        "https://lisnkids.herokuapp.com/api/avatars",
+        "https://lisnkids-api.herokuapp.com/api/avatars",
         formData,
         {
           headers: {
@@ -143,7 +143,7 @@ export default function AddFirstChildren({
         formData.append("age", ageChildren);
         //  send request to api
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/add_children",
+          "https://lisnkids-api.herokuapp.com/api/add_children",
           formData,
           {
             headers: {

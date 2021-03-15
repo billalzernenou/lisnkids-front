@@ -76,7 +76,7 @@ export default function EditChildrenScreen({
       // setChildren(JSON.parse(childrenStorage));
       try {
         const response = await axios.post(
-          `https://lisnkids.herokuapp.com/api/infoChildren`,
+          `https://lisnkids-api.herokuapp.com/api/infoChildren`,
           formData,
           {
             headers: {
@@ -105,7 +105,7 @@ export default function EditChildrenScreen({
       const formData = new FormData();
       formData.append("", "");
       const response = await axios.post(
-        "https://lisnkids.herokuapp.com/api/avatars",
+        "https://lisnkids-api.herokuapp.com/api/avatars",
         formData,
         {
           headers: {
@@ -146,7 +146,7 @@ export default function EditChildrenScreen({
         formData.append("nameAvatar", avatarSelected.title);
         formData.append("age", ageChildren);
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/update_children",
+          "https://lisnkids-api.herokuapp.com/api/update_children",
           formData,
           {
             headers: {

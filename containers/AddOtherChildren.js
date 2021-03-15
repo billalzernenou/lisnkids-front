@@ -74,7 +74,7 @@ export default function AddOtherChildren({
         const userId = await AsyncStorage.getItem("userId");
         formData.append("_id", userId);
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/userCard",
+          "https://lisnkids-api.herokuapp.com/api/userCard",
           formData,
           {
             headers: {
@@ -105,7 +105,7 @@ export default function AddOtherChildren({
       const formData = new FormData();
       formData.append("", "");
       const response = await axios.post(
-        "https://lisnkids.herokuapp.com/api/avatars",
+        "https://lisnkids-api.herokuapp.com/api/avatars",
         formData,
         {
           headers: {
@@ -146,7 +146,7 @@ export default function AddOtherChildren({
         formData.append("nameAvatar", avatarSelected.title);
         formData.append("age", ageChildren);
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/add_children",
+          "https://lisnkids-api.herokuapp.com/api/add_children",
           formData,
           {
             headers: {

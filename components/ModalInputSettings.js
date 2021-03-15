@@ -56,7 +56,7 @@ const ModalInput = ({
         }
         //  send request to api
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/update",
+          "https://lisnkids-api.herokuapp.com/api/update",
           formData,
 
           {

@@ -71,7 +71,7 @@ export default function GuidanceSuggestionScreen({
                 formData.append("guidance", true);
                 //  send request to api
                 const response = await axios.post(
-                  "https://lisnkids.herokuapp.com/api/update",
+                  "https://lisnkids-api.herokuapp.com/api/update",
                   formData,
                   {
                     headers: {
@@ -115,7 +115,7 @@ export default function GuidanceSuggestionScreen({
                 formData.append("guidance2", true);
                 //  send request to api
                 const response = await axios.post(
-                  "https://lisnkids.herokuapp.com/api/update",
+                  "https://lisnkids-api.herokuapp.com/api/update",
                   formData,
                   {
                     headers: {

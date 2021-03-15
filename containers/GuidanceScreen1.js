@@ -85,7 +85,7 @@ export default function GuidanceScreen1({
                 formData.append("guidance1", true);
                 //  send request to api
                 const response = await axios.post(
-                  "https://lisnkids.herokuapp.com/api/update",
+                  "https://lisnkids-api.herokuapp.com/api/update",
                   formData,
                   {
                     headers: {

@@ -151,7 +151,7 @@ export default function ParentSecretCodeScreen({
                   formData.append("secretCode", secretCodeInput);
                   //  send request to api
                   const response = await axios.post(
-                    "https://lisnkids-back.herokuapp.com/api/update",
+                    "https://lisnkids-api.herokuapp.com/api/update",
                     formData,
                     {
                       headers: {

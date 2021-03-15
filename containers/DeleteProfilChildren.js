@@ -51,7 +51,7 @@ export default function DeleteProfilChildren({
 
         //  send request to api
         const response = await axios.post(
-          "https://lisnkids.herokuapp.com/api/userCard",
+          "https://lisnkids-api.herokuapp.com/api/userCard",
           formData,
           {
             headers: {
@@ -93,7 +93,7 @@ export default function DeleteProfilChildren({
       formData.append("firstName", firstNameChildren);
 
       const response = await axios.post(
-        "https://lisnkids.herokuapp.com/api/delete_children",
+        "https://lisnkids-api.herokuapp.com/api/delete_children",
         formData,
         {
           headers: {

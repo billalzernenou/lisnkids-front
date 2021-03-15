@@ -41,7 +41,7 @@ export default function HomeScreen({
         setChildrenInfos(infos);
 
         const res = await axios.get(
-          "https://lisnkids.herokuapp.com/api/series",
+          "https://lisnkids-api.herokuapp.com/api/series",
           {
             headers: {
               Authorization: "Bearer LRCes!e2021vg",
@@ -50,7 +50,7 @@ export default function HomeScreen({
           }
         );
         const response = await axios.get(
-          "https://lisnkids.herokuapp.com/api/seriesStarsAll",
+          "https://lisnkids-api.herokuapp.com/api/seriesStarsAll",
           {
             headers: {
               Authorization: "Bearer LRCes!e2021vg",
